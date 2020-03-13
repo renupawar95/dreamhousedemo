@@ -9,9 +9,9 @@ echo 'cd to base dir'
 
 pwd
 #cp -r -v * /var/lib/jenkins/sf-build-job/git/sf_dev_ops/src
-cp -rf -v * ~/workspace/Salesforce_Pipeline/src
+cp -rf -v * /var/lib/jenkins/workspace/DreamHouseDemo_Pipeline/src
 echo 'copy files to workspace dir'
-cd ~/workspace/Salesforce_Pipeline
+cd /var/lib/jenkins/workspace/DreamHouseDemo_Pipeline
 pwd
 echo 'switch to workspace'
 #git init
