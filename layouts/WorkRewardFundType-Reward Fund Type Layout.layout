@@ -3,74 +3,85 @@
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
-        <editHeading>false</editHeading>
+        <editHeading>true</editHeading>
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>RecipientId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>SubjectId</field>
+                <behavior>Required</behavior>
+                <field>Name</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CreatedById</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>IsUnsolicited</field>
+                <behavior>Required</behavior>
+                <field>CreditSystem</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>SharingScope</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>LastSharedDate</field>
+                <field>IsActive</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>FeedbackRequestState</field>
+                <behavior>Required</behavior>
+                <field>OwnerId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>FeedbackType</field>
+                <field>LastModifiedById</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>PerformanceCycleId</field>
+                <behavior>Edit</behavior>
+                <field>CurrencyCode</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>LastRemindDate</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>SubmittedDate</field>
+                <behavior>Edit</behavior>
+                <field>IsPredefined</field>
             </layoutItems>
         </layoutColumns>
-        <style>TwoColumnsTopToBottom</style>
+        <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
-        <editHeading>false</editHeading>
-        <label>Ad Hoc Input</label>
+        <editHeading>true</editHeading>
+        <label>Redemption</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>AdHocQuestion</field>
+                <field>RedemptionUrl</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>AdHocFeedback</field>
+                <field>RedemptionInfo</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>RedemptionDisclaimer</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>false</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>UploadConfig</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>UploadCodeColumn</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>UploadValueColumn</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -79,18 +90,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <relatedLists>
-        <relatedList>RelatedFeedbackRelatedList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>ImageUrl</fields>
-        <fields>Definition</fields>
-        <fields>Message</fields>
-        <fields>Recipient</fields>
-        <fields>CreatedDate</fields>
-        <fields>Giver</fields>
-        <relatedList>RecentWorkThanksRelatedList</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>

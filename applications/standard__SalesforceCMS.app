@@ -2,7 +2,6 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <formFactors>Large</formFactors>
     <navType>Console</navType>
-    <tab>standard-CmsAuthorHome</tab>
     <tab>standard-CmsChannel</tab>
     <tab>standard-CmsWorkspaces</tab>
     <tab>standard-CmsExperiences</tab>

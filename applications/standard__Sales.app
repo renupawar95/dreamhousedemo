@@ -10,7 +10,6 @@
     <tab>standard-Forecasting3</tab>
     <tab>standard-Contract</tab>
     <tab>standard-Order</tab>
-    <tab>standard-Invoice</tab>
     <tab>standard-Case</tab>
     <tab>standard-Solution</tab>
     <tab>standard-Product2</tab>

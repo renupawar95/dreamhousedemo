@@ -3,71 +3,59 @@
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
-        <editHeading>false</editHeading>
+        <editHeading>true</editHeading>
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>RecipientId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>SubjectId</field>
+                <behavior>Readonly</behavior>
+                <field>Name</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CreatedById</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>IsUnsolicited</field>
+                <behavior>Required</behavior>
+                <field>GiverId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>SharingScope</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>LastSharedDate</field>
+                <field>RewardId</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>FeedbackRequestState</field>
+                <behavior>Required</behavior>
+                <field>SourceId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>FeedbackType</field>
+                <field>LastModifiedById</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>PerformanceCycleId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>LastRemindDate</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>SubmittedDate</field>
+                <behavior>Required</behavior>
+                <field>RecipientId</field>
             </layoutItems>
         </layoutColumns>
-        <style>TwoColumnsTopToBottom</style>
+        <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
-        <editHeading>false</editHeading>
-        <label>Ad Hoc Input</label>
+        <editHeading>true</editHeading>
+        <label>Description_and_Image</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>AdHocQuestion</field>
+                <behavior>Required</behavior>
+                <field>DefinitionId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>AdHocFeedback</field>
+                <field>Description</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ImageUrl</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
@@ -79,18 +67,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <relatedLists>
-        <relatedList>RelatedFeedbackRelatedList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>ImageUrl</fields>
-        <fields>Definition</fields>
-        <fields>Message</fields>
-        <fields>Recipient</fields>
-        <fields>CreatedDate</fields>
-        <fields>Giver</fields>
-        <relatedList>RecentWorkThanksRelatedList</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
