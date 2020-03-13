@@ -76,5 +76,5 @@
         <members>*</members>
         <name>Workflow</name>
     </types>
-    <version>38.0</version>
+    <version>48.0</version>
 </Package>
