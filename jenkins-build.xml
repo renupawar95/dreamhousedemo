@@ -70,8 +70,8 @@
 			password="${sf.password}"  
 			serverurl="${sf.serverurl}" 
 			maxPoll="10000" 
-			retrieveTarget="${sf_base_dir_path}/sf_dev_ops_sbxsync/src" 
-			unpackaged="${sf_base_dir_path}/sf_dev_ops_sbxsync/src/package.xml"/>
+			retrieveTarget="/var/lib/jenkins/sf-build-job/git/sf_dev_ops_sbxsync/src" 
+			unpackaged="/var/lib/jenkins/sf-build-job/git/sf_dev_ops_sbxsync/src/package.xml"/>
    
   </target>
 
