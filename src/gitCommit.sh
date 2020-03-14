@@ -21,7 +21,7 @@ echo "#File creted on `date`" >> test
 git checkout $Branch_Name
 git add .
 echo "Add "
-#git commit -m "FIle checked-in on `date +'%Y-%m-%d %H:%M:%S'`";
+git commit -m "FIle checked-in on `date +'%Y-%m-%d %H:%M:%S'`";
 echo 'commit files'
 #git commit -m "first commit"
 

@@ -67,10 +67,10 @@
  <members>*</members>
    <name>ApexTrigger</name>
 </type>
-<type>
+<!--<type>
  <members>*</members>
    <name>Workflow</name>
-</type>
+</type>-->
 
 <type>
  <members>*</members>
@@ -80,5 +80,5 @@
  <members>*</members>
 <name>ApexClass</name>
 </type>    
-<version>38.0</version>
+<version>48.0</version>
 </Package>

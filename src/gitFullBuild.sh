@@ -12,7 +12,7 @@ echo 'Build Prefix =' $5
 ################################################################################
 
 #cd /var/lib/jenkins/sf-build-job/git/sf_dev_ops_sbxsync
-cd /var/lib/jenkins/workspace/DreamHouseDemo_Pipeline/src
+cd /var/lib/jenkins/workspace/DreamHouseDemo_Pipeline
 
 if [[ `git branch --list $3`  ]];then
 	echo "Branch " $3 "exists !"
@@ -34,7 +34,7 @@ echo "Cleaned up Workspace looks like below..."
 ls -alR /var/lib/jenkins/jobs/MBOLT-ContinuousDelivery-GIT/workspace/sfdc/src
 
 #cd /var/lib/jenkins/sf-build-job/git/sf_dev_ops_sbxsync
-cd /var/lib/jenkins/workspace/DreamHouseDemo_Pipeline/src
+#cd /var/lib/jenkins/workspace/DreamHouseDemo_Pipeline/src
 git pull
 git checkout $3
 git log --since $Start_Date --until $End_Date --name-only --pretty=format:"%H$" >> /var/lib/jenkins/sf-build-job/git/main.log
